@@ -1,6 +1,16 @@
 ---
 name: systematic-debugging
 description: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
+allowed-tools:
+  - Read
+  - Bash
+  - Glob
+  - Grep
+  - Edit
+  - Write
+  - TodoWrite
+  - mcp__ide__getDiagnostics
+disable: false
 ---
 
 # Systematic Debugging
