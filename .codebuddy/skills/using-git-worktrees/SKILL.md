@@ -1,6 +1,13 @@
 ---
 name: using-git-worktrees
 description: Use when starting feature work that needs isolation from current workspace or before executing implementation plans - creates isolated git worktrees with smart directory selection and safety verification
+allowed-tools:
+  - Bash
+  - Read
+  - Glob
+  - AskUserQuestion
+  - TodoWrite
+disable: false
 ---
 
 # Using Git Worktrees
