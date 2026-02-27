@@ -1,6 +1,16 @@
 ---
 name: brainstorming
-description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
+description: You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores requirements and design before implementation.
+allowed-tools:
+  - Read
+  - Glob
+  - Grep
+  - Bash
+  - AskUserQuestion
+  - TodoWrite
+  - WebFetch
+  - WebSearch
+disable: false
 ---
 
 # Brainstorming Ideas Into Designs
