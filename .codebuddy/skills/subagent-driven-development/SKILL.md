@@ -1,6 +1,12 @@
 ---
 name: subagent-driven-development
 description: Use when executing implementation plans with independent tasks in the current session
+allowed-tools:
+  - Task
+  - Read
+  - TodoWrite
+  - Bash
+disable: false
 ---
 
 # Subagent-Driven Development
