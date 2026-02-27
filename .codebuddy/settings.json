@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${SUPERPOWERS_ROOT}/hooks/session-start",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
