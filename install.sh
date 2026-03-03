@@ -31,6 +31,10 @@ mkdir -p "${TARGET_DIR}"
 echo "复制技能文件 / Copying skills..."
 cp -r .codebuddy/skills "${TARGET_DIR}/"
 
+# Copy commands
+echo "复制Commands文件 / Copying commands..."
+cp -r .codebuddy/commands "${TARGET_DIR}/"
+
 # Copy or merge settings.json
 if [ -f "${TARGET_DIR}/settings.json" ]; then
     echo "检测到现有配置文件 / Existing config detected"

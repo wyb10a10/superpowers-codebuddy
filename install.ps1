@@ -29,6 +29,10 @@ New-Item -ItemType Directory -Force -Path $targetDir | Out-Null
 Write-Host "复制技能文件 / Copying skills..." -ForegroundColor Yellow
 Copy-Item -Recurse -Force ".codebuddy\skills" "$targetDir\"
 
+# Copy commands
+Write-Host "复制Commands文件 / Copying commands..." -ForegroundColor Yellow
+Copy-Item -Recurse -Force ".codebuddy\commands" "$targetDir\"
+
 # Copy or merge settings.json
 if (Test-Path "$targetDir\settings.json") {
     Write-Host "检测到现有配置文件 / Existing config detected" -ForegroundColor Yellow
