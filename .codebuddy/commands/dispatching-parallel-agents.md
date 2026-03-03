@@ -1,1 +1,6 @@
-Use the dispatching-parallel-agents skill to dispatch these independent tasks in parallel. $ARGUMENTS
+---
+description: "Dispatch 2+ independent tasks in parallel using subagents."
+disable-model-invocation: true
+---
+
+Invoke the superpowers:dispatching-parallel-agents skill and follow it exactly as presented to you

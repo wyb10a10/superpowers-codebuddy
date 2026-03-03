@@ -1,1 +1,6 @@
-Use the subagent-driven-development skill to execute the plan with subagents in this session. $ARGUMENTS
+---
+description: "Execute implementation plan with subagent-driven development in this session."
+disable-model-invocation: true
+---
+
+Invoke the superpowers:subagent-driven-development skill and follow it exactly as presented to you
