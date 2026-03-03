@@ -1,1 +1,1 @@
-Use the requesting-code-review skill to review the current work. $ARGUMENTS
+Use the requesting-code-review skill to request a code review of the current changes. $ARGUMENTS
