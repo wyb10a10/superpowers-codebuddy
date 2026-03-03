@@ -19,7 +19,16 @@
 
 ### 安装
 
-#### Mac/Linux
+#### 一行命令安装（推荐）
+
+**Mac/Linux:**
+```bash
+curl -fsSL https://raw.githubusercontent.com/wyb10a10/superpowers-codebuddy/main/install.sh | bash
+```
+
+#### 手动安装
+
+**Mac/Linux:**
 
 ```bash
 # 克隆仓库
@@ -194,7 +203,16 @@ This is an adaptation of the [Superpowers](https://github.com/coleam00/ottomator
 
 ### Installation
 
-#### Mac/Linux
+#### One-line Install (Recommended)
+
+**Mac/Linux:**
+```bash
+curl -fsSL https://raw.githubusercontent.com/wyb10a10/superpowers-codebuddy/main/install.sh | bash
+```
+
+#### Manual Install
+
+**Mac/Linux:**
 
 ```bash
 # Clone the repository
