@@ -1,5 +1,20 @@
 # Changelog
 
+## [4.3.1-codebuddy.2] - 2026-03-03
+
+### Added
+- `.codebuddy/commands/` directory with 13 commands for all superpowers skills
+- Recommended agent configurations (Code Review Expert, Debug Assistant, Requirements Analyst) in README
+
+### Fixed
+- `hooks/session-start`: add `additional_context` field for compatibility alongside `hookSpecificOutput`
+- `hooks/session-start`: add activation indicator message to session context
+- `.codebuddy/settings.json`: expand SessionStart matcher from `startup` to `startup|resume|clear|compact`
+- `.codebuddy/settings.json`: route hook through `run-hook.cmd` wrapper for Windows compatibility
+- Command files: add frontmatter with `description` and `disable-model-invocation: true`
+
+---
+
 ## [4.3.1-codebuddy.1] - 2026-02-27
 
 ### Based on Upstream

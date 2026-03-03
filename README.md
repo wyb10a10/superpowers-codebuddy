@@ -23,7 +23,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/YOUR-USERNAME/superpowers-codebuddy.git
+git clone https://github.com/wyb10a10/superpowers-codebuddy.git
 cd superpowers-codebuddy
 
 # 运行安装脚本
@@ -34,7 +34,7 @@ cd superpowers-codebuddy
 
 ```powershell
 # 克隆仓库
-git clone https://github.com/YOUR-USERNAME/superpowers-codebuddy.git
+git clone https://github.com/wyb10a10/superpowers-codebuddy.git
 cd superpowers-codebuddy
 
 # 运行安装脚本
@@ -98,6 +98,39 @@ $env:CODEBUDDY_CONFIG_DIR = "C:\path\to\your\codebuddy\config\.claude"
 | `verification-before-completion` | 完成前验证 | 声称完成工作前 |
 | `writing-plans` | 编写实施计划 | 多步骤任务前 |
 | `writing-skills` | 编写技能 | 创建或编辑技能时 |
+
+### 推荐智能体配置
+
+CodeBuddy 智能体通过 UI 创建（对话框左下角 → 创建智能体），无法通过配置文件部署。以下是推荐的智能体配置，复制后在 CodeBuddy 中创建即可。
+
+勾选"子智能体"后，默认 Agent 会在合适时机自动调用这些智能体。
+
+#### 代码审查专家
+
+- **名称**: 代码审查专家
+- **描述（影响自动调用）**: 当用户需要审查代码、检查 MR/PR、评估代码质量、分析代码规范时，必须调用我
+- **系统提示词**:
+  ```
+  你是一位严格的代码审查专家。当收到代码审查请求时，使用 receiving-code-review 技能来系统性地处理审查反馈，使用 requesting-code-review 技能来主动审查代码质量。关注代码正确性、可维护性、安全性和性能。
+  ```
+
+#### 调试助手
+
+- **名称**: 调试助手
+- **描述（影响自动调用）**: 当用户遇到 bug、测试失败、程序异常、报错信息时，必须调用我
+- **系统提示词**:
+  ```
+  你是一位系统化的调试专家。遇到任何 bug 或异常时，立即使用 systematic-debugging 技能，按照假设-验证的方式逐步定位根因，不凭直觉猜测。
+  ```
+
+#### 需求分析师
+
+- **名称**: 需求分析师
+- **描述（影响自动调用）**: 当用户要设计新功能、讨论需求、规划系统架构、创建实施计划时，必须调用我
+- **系统提示词**:
+  ```
+  你是一位严谨的需求分析师。接到新功能或设计任务时，先使用 brainstorming 技能充分探索需求，再使用 writing-plans 技能制定详细实施计划，避免直接跳入编码。
+  ```
 
 ### 故障排除
 
@@ -165,7 +198,7 @@ This is an adaptation of the [Superpowers](https://github.com/coleam00/ottomator
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR-USERNAME/superpowers-codebuddy.git
+git clone https://github.com/wyb10a10/superpowers-codebuddy.git
 cd superpowers-codebuddy
 
 # Run install script
@@ -176,7 +209,7 @@ cd superpowers-codebuddy
 
 ```powershell
 # Clone the repository
-git clone https://github.com/YOUR-USERNAME/superpowers-codebuddy.git
+git clone https://github.com/wyb10a10/superpowers-codebuddy.git
 cd superpowers-codebuddy
 
 # Run install script
@@ -240,6 +273,39 @@ Skills are triggered automatically based on context. You can also:
 | `verification-before-completion` | Verify before completion | Before claiming work complete |
 | `writing-plans` | Write implementation plans | Before multi-step tasks |
 | `writing-skills` | Write skills | When creating/editing skills |
+
+### Recommended Agent Configurations
+
+CodeBuddy agents are created via UI (bottom-left of chat → Create Agent) and cannot be deployed via config files. Copy these configurations to create agents in CodeBuddy.
+
+Enable "Sub-agent" to allow the default Agent to automatically call these agents when appropriate.
+
+#### Code Review Expert
+
+- **Name**: Code Review Expert
+- **Description (affects auto-invocation)**: When the user needs code review, MR/PR review, code quality analysis, or coding standard checks, I must be called
+- **System Prompt**:
+  ```
+  You are a strict code review expert. Use the receiving-code-review skill when processing review feedback, and the requesting-code-review skill when proactively reviewing code quality. Focus on correctness, maintainability, security, and performance.
+  ```
+
+#### Debug Assistant
+
+- **Name**: Debug Assistant
+- **Description (affects auto-invocation)**: When the user encounters bugs, test failures, exceptions, or error messages, I must be called
+- **System Prompt**:
+  ```
+  You are a systematic debugging expert. Use the systematic-debugging skill immediately when encountering any bug or exception. Follow hypothesis-validation approach to locate root causes. Never guess.
+  ```
+
+#### Requirements Analyst
+
+- **Name**: Requirements Analyst
+- **Description (affects auto-invocation)**: When the user wants to design new features, discuss requirements, plan system architecture, or create implementation plans, I must be called
+- **System Prompt**:
+  ```
+  You are a rigorous requirements analyst. Use the brainstorming skill to thoroughly explore requirements before any new feature or design task, then use writing-plans to create a detailed implementation plan. Never jump straight into coding.
+  ```
 
 ### Troubleshooting
 
